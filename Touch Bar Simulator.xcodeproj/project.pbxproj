@@ -10,6 +10,7 @@
 		3C48E6A6247C370E00D22565 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 3C48E6A5247C370E00D22565 /* KeyboardShortcuts */; };
 		3C8493AD21FD3B7F00F12966 /* Glue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8493AC21FD3B7F00F12966 /* Glue.swift */; };
 		3CF6C771247CC3DF007554B9 /* KeyboardShortcutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6C770247CC3DF007554B9 /* KeyboardShortcutsView.swift */; };
+		564073D529AB3F4200DD9DAD /* HintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564073D429AB3F4200DD9DAD /* HintView.swift */; };
 		AF6C7BC61E7FAF38004A27E0 /* ToolbarSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C7BC51E7FAF38004A27E0 /* ToolbarSlider.swift */; };
 		E31957F923F140D500856B40 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = E31957F823F140D500856B40 /* Defaults */; };
 		E3445091251573A4004A5FC1 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = E3445090251573A4004A5FC1 /* LaunchAtLogin */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		3C8493AC21FD3B7F00F12966 /* Glue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Glue.swift; sourceTree = "<group>"; usesTabs = 1; };
 		3CF6C770247CC3DF007554B9 /* KeyboardShortcutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcutsView.swift; sourceTree = "<group>"; };
+		564073D429AB3F4200DD9DAD /* HintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintView.swift; sourceTree = "<group>"; };
 		AF6C7BC51E7FAF38004A27E0 /* ToolbarSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ToolbarSlider.swift; sourceTree = "<group>"; usesTabs = 1; };
 		E34D6548214BBDAE00786C24 /* Touch Bar Simulator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Touch Bar Simulator.entitlements"; sourceTree = "<group>"; };
 		E35579EA21595EDC001CB642 /* TouchBarWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = TouchBarWindow.swift; sourceTree = "<group>"; usesTabs = 1; };
@@ -121,6 +123,7 @@
 				E35831A31F4D7EE0003BE371 /* Utilities.swift */,
 				E3FE2CC41E726CE800C6713A /* Assets.xcassets */,
 				E356A16421028DAB000148AD /* Other */,
+				564073D429AB3F4200DD9DAD /* HintView.swift */,
 			);
 			path = "Touch Bar Simulator";
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E35831A41F4D7EE0003BE371 /* Utilities.swift in Sources */,
+				564073D529AB3F4200DD9DAD /* HintView.swift in Sources */,
 				AF6C7BC61E7FAF38004A27E0 /* ToolbarSlider.swift in Sources */,
 				3C8493AD21FD3B7F00F12966 /* Glue.swift in Sources */,
 				3CF6C771247CC3DF007554B9 /* KeyboardShortcutsView.swift in Sources */,
@@ -392,11 +396,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 8;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = YG56YK5RN5;
+				DEVELOPMENT_TEAM = VUW8FV5HN5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -413,6 +418,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 4.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sindresorhus.Touch-Bar-Simulator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -434,11 +440,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 8;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = YG56YK5RN5;
+				DEVELOPMENT_TEAM = VUW8FV5HN5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +462,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 4.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sindresorhus.Touch-Bar-Simulator";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -62,6 +62,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 	}
 
 	@objc
+	@available(*, deprecated)
 	func captureScreenshot() {
 		let KEY_6: CGKeyCode = 0x58
 		pressKey(keyCode: KEY_6, flags: [.maskShift, .maskCommand])
@@ -83,6 +84,7 @@ extension AppDelegate: NSMenuDelegate {
 		menu.addItem(NSMenuItem(title: "Docking", action: nil, keyEquivalent: ""))
 		var statusMenuDockingItems: [NSMenuItem] = []
 		statusMenuDockingItems.append(NSMenuItem("Floating").bindChecked(to: .windowDocking, value: .floating))
+		statusMenuDockingItems.append(NSMenuItem("Floating (TitleLess)").bindChecked(to: .windowDocking, value: .floatingTitleless))
 		statusMenuDockingItems.append(NSMenuItem("Docked to Top").bindChecked(to: .windowDocking, value: .dockedToTop))
 		statusMenuDockingItems.append(NSMenuItem("Docked to Bottom").bindChecked(to: .windowDocking, value: .dockedToBottom))
 		for item in statusMenuDockingItems {

@@ -6,6 +6,7 @@ final class TouchBarWindow: NSPanel {
 	// TODO: Migrate this to not use `Codable`.
 	enum Docking: String, Codable {
 		case floating
+		case floatingTitleless
 		case dockedToTop
 		case dockedToBottom
 
@@ -13,6 +14,8 @@ final class TouchBarWindow: NSPanel {
 			switch self {
 			case .floating:
 				window.addTitlebar()
+			case .floatingTitleless:
+				window.removeTitlebar()
 			case .dockedToTop:
 				window.removeTitlebar()
 			case .dockedToBottom:
@@ -25,6 +28,10 @@ final class TouchBarWindow: NSPanel {
 		func reposition(window: NSWindow, padding: Double) {
 			switch self {
 			case .floating:
+				if let prevPosition = Defaults[.lastFloatingPosition] {
+					window.setFrameOrigin(prevPosition)
+				}
+			case .floatingTitleless:
 				if let prevPosition = Defaults[.lastFloatingPosition] {
 					window.setFrameOrigin(prevPosition)
 				}
@@ -292,6 +299,11 @@ final class TouchBarWindow: NSPanel {
 		touchBarView.frame = touchBarView.frame.centered(in: view.bounds)
 		view.addSubview(touchBarView)
 
+		let hintView = HintView()
+		setContentSize(hintView.bounds.adding(padding: 5).size)
+		hintView.frame = hintView.frame.centered(in: view.bounds)
+		view.addSubview(hintView)
+
 		Defaults.tiedToLifetime(of: self) {
 			Defaults.observe(.windowTransparency) { [weak self] change in
 				self?.alphaValue = change.newValue
@@ -357,5 +369,8 @@ final class TouchBarWindow: NSPanel {
 		self.worksWhenModal = true
 		self.acceptsMouseMovedEvents = true
 		self.isMovableByWindowBackground = false
+		resignKey()
+		resignMain()
+		self.canBecomeVisibleWithoutLogin = true
 	}
 }
