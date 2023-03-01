@@ -8,24 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		3C48E6A6247C370E00D22565 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 3C48E6A5247C370E00D22565 /* KeyboardShortcuts */; };
-		3C8493AD21FD3B7F00F12966 /* Glue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8493AC21FD3B7F00F12966 /* Glue.swift */; };
-		3CF6C771247CC3DF007554B9 /* KeyboardShortcutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6C770247CC3DF007554B9 /* KeyboardShortcutsView.swift */; };
-		564073D529AB3F4200DD9DAD /* HintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564073D429AB3F4200DD9DAD /* HintView.swift */; };
-		AF6C7BC61E7FAF38004A27E0 /* ToolbarSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C7BC51E7FAF38004A27E0 /* ToolbarSlider.swift */; };
+		56C5F7EA29AF8BF500AB7DCE /* TouchBarWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C5F7E929AF8BF500AB7DCE /* TouchBarWindow.swift */; };
+		56C5F7EB29AF8C6600AB7DCE /* TouchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A158D214D0C4F00F86D5D /* TouchBar.swift */; };
+		56C5F7EF29AF943500AB7DCE /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE2CC21E726CE800C6713A /* App.swift */; };
+		56C5F7F229AF969200AB7DCE /* WindowManagement in Frameworks */ = {isa = PBXBuildFile; productRef = 56C5F7F129AF969200AB7DCE /* WindowManagement */; };
+		56E938A629ABA6FE00BA896B /* MainEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E938A529ABA6FE00BA896B /* MainEntry.swift */; };
+		56E938AA29ABAC7F00BA896B /* SwiftExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E938A929ABAC7F00BA896B /* SwiftExtension.swift */; };
 		E31957F923F140D500856B40 /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = E31957F823F140D500856B40 /* Defaults */; };
 		E3445091251573A4004A5FC1 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = E3445090251573A4004A5FC1 /* LaunchAtLogin */; };
-		E35579EB21595EDC001CB642 /* TouchBarWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35579EA21595EDC001CB642 /* TouchBarWindow.swift */; };
-		E356A16321028D81000148AD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E356A16221028D81000148AD /* main.swift */; };
-		E35831A41F4D7EE0003BE371 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35831A31F4D7EE0003BE371 /* Utilities.swift */; };
-		E3930B10216625BE00F66410 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3930B0F216625BE00F66410 /* Constants.swift */; };
 		E39A157E214CFE7100F86D5D /* DFRFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E39A157D214CFE7100F86D5D /* DFRFoundation.framework */; };
 		E39A157F214CFE7100F86D5D /* DFRFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E39A157D214CFE7100F86D5D /* DFRFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E39A158A214D011F00F86D5D /* SkyLight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E39A1589214D011F00F86D5D /* SkyLight.framework */; };
 		E39A158B214D011F00F86D5D /* SkyLight.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E39A1589214D011F00F86D5D /* SkyLight.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E39A158E214D0C4F00F86D5D /* TouchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39A158D214D0C4F00F86D5D /* TouchBarView.swift */; };
 		E3D07F1327947D6C006320B7 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = E3D07F1227947D6C006320B7 /* Sparkle */; };
-		E3FE2CC31E726CE800C6713A /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FE2CC21E726CE800C6713A /* App.swift */; };
-		E3FE2CC51E726CE800C6713A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3FE2CC41E726CE800C6713A /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,23 +39,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3C8493AC21FD3B7F00F12966 /* Glue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Glue.swift; sourceTree = "<group>"; usesTabs = 1; };
-		3CF6C770247CC3DF007554B9 /* KeyboardShortcutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcutsView.swift; sourceTree = "<group>"; };
-		564073D429AB3F4200DD9DAD /* HintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintView.swift; sourceTree = "<group>"; };
-		AF6C7BC51E7FAF38004A27E0 /* ToolbarSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ToolbarSlider.swift; sourceTree = "<group>"; usesTabs = 1; };
-		E34D6548214BBDAE00786C24 /* Touch Bar Simulator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Touch Bar Simulator.entitlements"; sourceTree = "<group>"; };
-		E35579EA21595EDC001CB642 /* TouchBarWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = TouchBarWindow.swift; sourceTree = "<group>"; usesTabs = 1; };
-		E356A16221028D81000148AD /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = main.swift; sourceTree = "<group>"; usesTabs = 1; };
-		E35831A31F4D7EE0003BE371 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Utilities.swift; sourceTree = "<group>"; usesTabs = 1; };
-		E3930B0F216625BE00F66410 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Constants.swift; sourceTree = "<group>"; usesTabs = 1; };
+		56C5F7E929AF8BF500AB7DCE /* TouchBarWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarWindow.swift; sourceTree = "<group>"; };
+		56E938A529ABA6FE00BA896B /* MainEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEntry.swift; sourceTree = "<group>"; };
+		56E938A929ABAC7F00BA896B /* SwiftExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExtension.swift; sourceTree = "<group>"; };
 		E39A157D214CFE7100F86D5D /* DFRFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DFRFoundation.framework; path = ../../../../../System/Library/PrivateFrameworks/DFRFoundation.framework; sourceTree = "<group>"; };
 		E39A1589214D011F00F86D5D /* SkyLight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkyLight.framework; path = ../../../../../System/Library/PrivateFrameworks/SkyLight.framework; sourceTree = "<group>"; };
-		E39A158D214D0C4F00F86D5D /* TouchBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = TouchBarView.swift; sourceTree = "<group>"; usesTabs = 1; };
+		E39A158D214D0C4F00F86D5D /* TouchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = TouchBar.swift; sourceTree = "<group>"; usesTabs = 1; };
 		E3FE2CBF1E726CE800C6713A /* Touch Bar Simulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Touch Bar Simulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FE2CC21E726CE800C6713A /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = App.swift; sourceTree = "<group>"; usesTabs = 1; };
 		E3FE2CC41E726CE800C6713A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E3FE2CC91E726CE800C6713A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E3FE2CD21E726EA100C6713A /* Touch Bar Simulator-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "Touch Bar Simulator-Bridging-Header.h"; sourceTree = "<group>"; usesTabs = 1; };
+		E3FE2CD21E726EA100C6713A /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Bridge.h; sourceTree = "<group>"; usesTabs = 1; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +60,7 @@
 				E3445091251573A4004A5FC1 /* LaunchAtLogin in Frameworks */,
 				E31957F923F140D500856B40 /* Defaults in Frameworks */,
 				E39A157E214CFE7100F86D5D /* DFRFoundation.framework in Frameworks */,
+				56C5F7F229AF969200AB7DCE /* WindowManagement in Frameworks */,
 				E39A158A214D011F00F86D5D /* SkyLight.framework in Frameworks */,
 				3C48E6A6247C370E00D22565 /* KeyboardShortcuts in Frameworks */,
 			);
@@ -80,20 +69,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E356A16421028DAB000148AD /* Other */ = {
+		56E938A429ABA6C300BA896B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E356A16221028D81000148AD /* main.swift */,
-				E3FE2CD21E726EA100C6713A /* Touch Bar Simulator-Bridging-Header.h */,
-				E3FE2CC91E726CE800C6713A /* Info.plist */,
-				E34D6548214BBDAE00786C24 /* Touch Bar Simulator.entitlements */,
+				56E938A529ABA6FE00BA896B /* MainEntry.swift */,
+				56C5F7E929AF8BF500AB7DCE /* TouchBarWindow.swift */,
+				E39A158D214D0C4F00F86D5D /* TouchBar.swift */,
 			);
-			name = Other;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		56E938A729ABA7E300BA896B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E3FE2CD21E726EA100C6713A /* Bridge.h */,
+				56E938A929ABAC7F00BA896B /* SwiftExtension.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		E3FE2CB61E726CE800C6713A = {
 			isa = PBXGroup;
 			children = (
+				56E938A729ABA7E300BA896B /* Utilities */,
+				56E938A429ABA6C300BA896B /* Views */,
 				E3FE2CC11E726CE800C6713A /* Touch Bar Simulator */,
 				E3FE2CC01E726CE800C6713A /* Products */,
 				E39A1589214D011F00F86D5D /* SkyLight.framework */,
@@ -113,17 +112,8 @@
 		E3FE2CC11E726CE800C6713A /* Touch Bar Simulator */ = {
 			isa = PBXGroup;
 			children = (
-				E3930B0F216625BE00F66410 /* Constants.swift */,
 				E3FE2CC21E726CE800C6713A /* App.swift */,
-				E35579EA21595EDC001CB642 /* TouchBarWindow.swift */,
-				E39A158D214D0C4F00F86D5D /* TouchBarView.swift */,
-				AF6C7BC51E7FAF38004A27E0 /* ToolbarSlider.swift */,
-				3CF6C770247CC3DF007554B9 /* KeyboardShortcutsView.swift */,
-				3C8493AC21FD3B7F00F12966 /* Glue.swift */,
-				E35831A31F4D7EE0003BE371 /* Utilities.swift */,
 				E3FE2CC41E726CE800C6713A /* Assets.xcassets */,
-				E356A16421028DAB000148AD /* Other */,
-				564073D429AB3F4200DD9DAD /* HintView.swift */,
 			);
 			path = "Touch Bar Simulator";
 			sourceTree = "<group>";
@@ -135,7 +125,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3FE2CCC1E726CE800C6713A /* Build configuration list for PBXNativeTarget "Touch Bar Simulator" */;
 			buildPhases = (
-				E3679C9A215A1ECA0080270F /* SwiftLint */,
 				E3FE2CBB1E726CE800C6713A /* Sources */,
 				E3FE2CBC1E726CE800C6713A /* Frameworks */,
 				E3FE2CBD1E726CE800C6713A /* Resources */,
@@ -152,6 +141,7 @@
 				3C48E6A5247C370E00D22565 /* KeyboardShortcuts */,
 				E3445090251573A4004A5FC1 /* LaunchAtLogin */,
 				E3D07F1227947D6C006320B7 /* Sparkle */,
+				56C5F7F129AF969200AB7DCE /* WindowManagement */,
 			);
 			productName = "Touch Bar Simulator";
 			productReference = E3FE2CBF1E726CE800C6713A /* Touch Bar Simulator.app */;
@@ -192,6 +182,7 @@
 				3C48E6A4247C370E00D22565 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 				E344508F251573A4004A5FC1 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
 				E3D07F1127947D6C006320B7 /* XCRemoteSwiftPackageReference "Sparkle" */,
+				56C5F7F029AF969200AB7DCE /* XCRemoteSwiftPackageReference "SwiftUI-WindowManagement" */,
 			);
 			productRefGroup = E3FE2CC01E726CE800C6713A /* Products */;
 			projectDirPath = "";
@@ -207,7 +198,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3FE2CC51E726CE800C6713A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,26 +223,6 @@
 			shellScript = "\"${BUILT_PRODUCTS_DIR}/LaunchAtLogin_LaunchAtLogin.bundle/Contents/Resources/copy-helper-swiftpm.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E3679C9A215A1ECA0080270F /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "PATH=\"/opt/homebrew/bin/:${PATH}\"\nswiftlint\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -260,16 +230,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E35831A41F4D7EE0003BE371 /* Utilities.swift in Sources */,
-				564073D529AB3F4200DD9DAD /* HintView.swift in Sources */,
-				AF6C7BC61E7FAF38004A27E0 /* ToolbarSlider.swift in Sources */,
-				3C8493AD21FD3B7F00F12966 /* Glue.swift in Sources */,
-				3CF6C771247CC3DF007554B9 /* KeyboardShortcutsView.swift in Sources */,
-				E356A16321028D81000148AD /* main.swift in Sources */,
-				E35579EB21595EDC001CB642 /* TouchBarWindow.swift in Sources */,
-				E3930B10216625BE00F66410 /* Constants.swift in Sources */,
-				E3FE2CC31E726CE800C6713A /* App.swift in Sources */,
-				E39A158E214D0C4F00F86D5D /* TouchBarView.swift in Sources */,
+				56C5F7EB29AF8C6600AB7DCE /* TouchBar.swift in Sources */,
+				56E938A629ABA6FE00BA896B /* MainEntry.swift in Sources */,
+				56E938AA29ABAC7F00BA896B /* SwiftExtension.swift in Sources */,
+				56C5F7EF29AF943500AB7DCE /* App.swift in Sources */,
+				56C5F7EA29AF8BF500AB7DCE /* TouchBarWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +364,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = NO;
 				CURRENT_PROJECT_VERSION = 8;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = VUW8FV5HN5;
@@ -411,7 +377,8 @@
 					/Applications/Xcode.app/Contents/PlugIns,
 					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks,
 				);
-				INFOPLIST_FILE = "Touch Bar Simulator/Info.plist";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -420,12 +387,12 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 4.2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sindresorhus.Touch-Bar-Simulator";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tiankaimaTouch-Bar-Simulator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				REEXPORTED_LIBRARY_PATHS = "";
 				SWIFT_COMPILATION_MODE = singlefile;
-				SWIFT_OBJC_BRIDGING_HEADER = "Touch Bar Simulator/Touch Bar Simulator-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = Utilities/Bridge.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -443,6 +410,7 @@
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = NO;
 				CURRENT_PROJECT_VERSION = 8;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = VUW8FV5HN5;
@@ -455,7 +423,8 @@
 					/Applications/Xcode.app/Contents/PlugIns,
 					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks,
 				);
-				INFOPLIST_FILE = "Touch Bar Simulator/Info.plist";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -464,11 +433,11 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 4.2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sindresorhus.Touch-Bar-Simulator";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tiankaimaTouch-Bar-Simulator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				REEXPORTED_LIBRARY_PATHS = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Touch Bar Simulator/Touch Bar Simulator-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = Utilities/Bridge.h;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
@@ -508,6 +477,14 @@
 				minimumVersion = 1.3.0;
 			};
 		};
+		56C5F7F029AF969200AB7DCE /* XCRemoteSwiftPackageReference "SwiftUI-WindowManagement" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Wouter01/SwiftUI-WindowManagement";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		E31957F723F140D500856B40 /* XCRemoteSwiftPackageReference "Defaults" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/Defaults";
@@ -539,6 +516,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3C48E6A4247C370E00D22565 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
 			productName = KeyboardShortcuts;
+		};
+		56C5F7F129AF969200AB7DCE /* WindowManagement */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56C5F7F029AF969200AB7DCE /* XCRemoteSwiftPackageReference "SwiftUI-WindowManagement" */;
+			productName = WindowManagement;
 		};
 		E31957F823F140D500856B40 /* Defaults */ = {
 			isa = XCSwiftPackageProductDependency;

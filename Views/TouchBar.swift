@@ -1,6 +1,8 @@
 import Cocoa
+import SwiftUI
 
 final class TouchBarView: NSView {
+	static var shared = TouchBarView()
 	private var stream: CGDisplayStream?
 
 	override init(frame: CGRect) {
@@ -66,4 +68,15 @@ final class TouchBarView: NSView {
 	override func mouseDragged(with event: NSEvent) {
 		mouseEvent(event)
 	}
+}
+
+struct TouchBarViewRepresentable: NSViewRepresentable {
+	func makeNSView(context: Context) -> TouchBarView {
+		TouchBarView.shared
+	}
+	
+	func updateNSView(_ nsView: TouchBarView, context: Context) {
+	}
+	
+	typealias NSViewType = TouchBarView
 }
